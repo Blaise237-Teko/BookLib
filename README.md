@@ -28,26 +28,29 @@ This Book Library Manager allows users to:
 | **JFreeChart**| Chart library for data visualization |
 
 ---
-
-## 📁 Project Structure
-
-BookLibrary/
+```
+## 📁 BookLibrary/
+book-library-gui/
+├── lib/                       # External libraries
+│   ├── sqlite-jdbc.jar        # JDBC driver for SQLite
+│   └── jfreechart.jar         # Library for visual charts
 ├── src/
-│ ├── gui/
-│ │ ├── AddBookForm.java
-│ │ ├── BookTablePanel.java
-│ │ └── DashboardPanel.java
-│ ├── dao/
-│ │ └── BookDAO.java
-│ ├── database/
-│ │ └── Database.java
-│ ├── model/
-│ │ └── Book.java
-│ ├── chart/
-│ │ └── StatsChart.java
-│ └── Main.java
+│   ├── gui/
+│   │   ├── AddBookForm.java
+│   │   ├── BookTablePanel.java
+│   │   └── DashboardPanel.java
+│   ├── dao/
+│   │   └── BookDAO.java
+│   ├── database/
+│   │   └── Database.java
+│   ├── model/     # Book.java, DAO classes
+│   │   └── Book.java
+│   ├── chart/
+│   │   └── StatsChart.java
+│   └── Main.java      # App entry point
 ├── db/
-│ └── books.db
+│   └── books.db
 ├── README.md
 ├── .gitignore
-└── BookLibrary.launch (optional for Eclipse)
+└── BookLibrary.launch   (optional for Eclipse)
+```
