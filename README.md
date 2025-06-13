@@ -30,7 +30,7 @@ This Book Library Manager allows users to:
 ---
 ```
 ## 📁 BookLibrary/
-book-library-gui/
+book-library-externalfiles/
 ├── lib/                       # External libraries
 │   ├── sqlite-jdbc.jar        # JDBC driver for SQLite
 │   └── jfreechart.jar         # Library for visual charts
